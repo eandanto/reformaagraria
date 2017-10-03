@@ -1,0 +1,10 @@
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\bin\Debug\netcoreapp1.1\reformaagraria.deps.json
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\bin\Debug\netcoreapp1.1\reformaagraria.runtimeconfig.json
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\bin\Debug\netcoreapp1.1\reformaagraria.runtimeconfig.dev.json
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\bin\Debug\netcoreapp1.1\reformaagraria.dll
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\bin\Debug\netcoreapp1.1\reformaagraria.pdb
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.csprojResolveAssemblyReference.cache
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.csproj.CoreCompileInputs.cache
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.AssemblyInfo.cs
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.dll
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.pdb
