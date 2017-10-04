@@ -33,5 +33,10 @@ namespace reformaagraria.Controllers
         {
             return View();
         }
+
+        public IActionResult FormBatasDesa()
+        {
+            return View();
+        }
     }
 }
