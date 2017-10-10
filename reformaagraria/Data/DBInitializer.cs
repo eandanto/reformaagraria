@@ -8,53 +8,29 @@ namespace reformaagraria.Data
 {
     public class DbInitializer
     {
-        public static void Initialize(RADataContext context)
+        public static void Initialize(ReformaAgrariaDataContext context)
         {
             context.Database.EnsureCreated();
 
             // Look for any kabupaten.
-            if (context.KabupatenModel.Any())
+            if (context.Region.Any())
             {
                 return;   // DB has been seeded
             }
 
-            var kabupatenModel = new KabupatenModel[]
+            var region = new Region[]
             {
-            new KabupatenModel{KabupatenId=1,Name="Sigi"}
+            new Region{Id="1",Name="Sigi",Type=RegionType.KABUPATEN,fkParentId=null,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="2",Name="Dolo",Type=RegionType.KECAMATAN,fkParentId="1",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="3",Name="Gumbasa",Type=RegionType.KABUPATEN,fkParentId="1",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="4",Name="Maku",Type=RegionType.DESA,fkParentId="2",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="5",Name="Tulo",Type=RegionType.DESA,fkParentId="2",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="6",Name="Tuwa",Type=RegionType.DESA,fkParentId="3",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Id="7",Name="Pakuli",Type=RegionType.DESA,fkParentId="3",DateCreated=DateTime.Now,DateModified=DateTime.Now},
             };
-            foreach (KabupatenModel kb in kabupatenModel)
+            foreach (Region rg in region)
             {
-                context.KabupatenModel.Add(kb);
-            }
-            context.SaveChanges();
-
-            var kecamatanModel = new KecamatanModel[]
-            {
-            new KecamatanModel{KecamatanId=1,Name="Dolo",KabupatenId=1},
-            new KecamatanModel{KecamatanId=2,Name="Gumbasa",KabupatenId=1},
-            new KecamatanModel{KecamatanId=3,Name="Kinovaro",KabupatenId=1},
-            new KecamatanModel{KecamatanId=4,Name="Nokilalaki",KabupatenId=1},
-            new KecamatanModel{KecamatanId=5,Name="Palolo",KabupatenId=1}
-            };
-            foreach (KecamatanModel kc in kecamatanModel)
-            {
-                context.KecamatanModel.Add(kc);
-            }
-            context.SaveChanges();
-
-            var desaModel = new DesaModel[]
-            {
-            new DesaModel{DesaId=1,Name="Kabobona",KecamatanId=1},
-            new DesaModel{DesaId=2,Name="Tulo",KecamatanId=1},
-            new DesaModel{DesaId=3,Name="Pakuli",KecamatanId=2},
-            new DesaModel{DesaId=4,Name="Doda",KecamatanId=3},
-            new DesaModel{DesaId=5,Name="Rondingo",KecamatanId=3},
-            new DesaModel{DesaId=6,Name="Sopu",KecamatanId=4},
-            new DesaModel{DesaId=7,Name="Makmur",KecamatanId=5},
-            };
-            foreach (DesaModel ds in desaModel)
-            {
-                context.DesaModel.Add(ds);
+                context.Region.Add(rg);
             }
             context.SaveChanges();
         }

@@ -21,7 +21,7 @@ namespace reformaagraria
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<RADataContext>();
+                    var context = services.GetRequiredService<ReformaAgrariaDataContext>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

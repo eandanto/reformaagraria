@@ -10,8 +10,8 @@ namespace reformaagraria.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly RADataContext db;
-        public HomeController(RADataContext context)
+        private readonly ReformaAgrariaDataContext db;
+        public HomeController(ReformaAgrariaDataContext context)
         {
             db = context;
         }

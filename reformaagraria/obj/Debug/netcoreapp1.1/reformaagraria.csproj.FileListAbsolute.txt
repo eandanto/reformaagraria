@@ -8,3 +8,4 @@ C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netc
 C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.AssemblyInfo.cs
 C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.dll
 C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.pdb
+C:\Users\erlan\Documents\Workspaces\reformaagraria\reformaagraria\obj\Debug\netcoreapp1.1\reformaagraria.AssemblyInfoInputs.cache

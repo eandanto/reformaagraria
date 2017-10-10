@@ -7,17 +7,12 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class KabupatenModel
+    public enum RegionType
     {
-        public KabupatenModel()
-        {
-
-        }
-        [Required]
-        [Key]
-        public int KabupatenId { get; set; }
-
-        [Required]
-        public string Name { get; set; }
+        NASIONAL = 0,
+        PROPINSI = 1,
+        KABUPATEN = 2,
+        KECAMATAN = 3,
+        DESA = 4
     }
 }
