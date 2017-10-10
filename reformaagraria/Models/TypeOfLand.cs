@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public enum UsulanPenanganan
+    public enum TypeOfLand
     {
-        PELEPASAN_KAWASAN_HUTAN = 0,
-        HUTAN_ADAT = 1,
-        REDISTRIBUSI_TANAH = 2,
-        LEGALISASI_ASET = 3
+        FLAT = 0,
+        SLOPING = 1,
+        HILL = 2,
+        MOUNTAIN = 3
     }
 }

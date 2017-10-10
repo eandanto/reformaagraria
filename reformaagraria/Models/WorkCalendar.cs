@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class PengajuanTora
+    public class WorkCalendar
     {
-        public PengajuanTora()
+        public WorkCalendar()
         {
 
         }
@@ -18,7 +18,19 @@ namespace reformaagraria.Models
         [Key]
         public string Id { get; set; }
         
-        public string Lampiran { get; set; }
+        public string TitleOfActivity { get; set; }
+
+        public string AgendaOfActivity { get; set; }
+
+        public RegionType ImplementationOfActivity { get; set; }
+
+        public string Place { get; set; }
+
+        public DateTime StartDate { get; set; }
+
+        public DateTime EndDate { get; set; }
+
+        public string Notes { get; set; }
         
         public DateTime DateCreated { get; set; }
 

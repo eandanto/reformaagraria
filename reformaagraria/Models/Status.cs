@@ -9,8 +9,8 @@ namespace reformaagraria.Models
 {
     public enum Status
     {
-        USULAN = 0,
-        VERIFIKASI = 1,
-        PENETAPAN = 2
+        PROPOSAL = 0,
+        VERIFICATION = 1,
+        ACT = 2
     }
 }

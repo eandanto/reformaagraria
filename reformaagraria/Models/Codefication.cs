@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public enum BentanganLahan
+    public enum Codefication
     {
-        DATAR = 0,
-        LANDAI = 1,
-        BUKIT = 2,
-        PEGUNUNGAN = 3
+        COMMUNITY_COMMUNITY = 0,
+        COMMUNITY_NATION = 1,
+        COMMUNITY_PRIVATE = 2,
+        NATION_PRIVATE = 3
     }
 }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class ProfilDesa
+    public class ProfileOfVillage
     {
-        public ProfilDesa()
+        public ProfileOfVillage()
         {
 
         }
@@ -19,11 +19,11 @@ namespace reformaagraria.Models
         [ForeignKey("Region")]
         public int Id { get; set; }
 
-        public string Sejarah { get; set; }
+        public string History { get; set; }
                 
-        public string Potensi { get; set; }
+        public string Potential { get; set; }
                 
-        public string KondisiTenurial { get; set; }
+        public string TenurialCondition { get; set; }
         
         public DateTime DateCreated { get; set; }
 

@@ -15,30 +15,30 @@ namespace reformaagraria.Data
         }
 
         public DbSet<Region> Region { get; set; }
-        public DbSet<AtributPetaDesa> AtributPetaDesa { get; set; }
-        public DbSet<AtributPetaTora> AtributPetaTora { get; set; }
-        public DbSet<KalenderKerja> KalenderKerja { get; set; }
-        public DbSet<KebijakanPustaka> KebijakanPustaka { get; set; }
-        public DbSet<LaporanPertemuan> LaporanPertemuan { get; set; }
-        public DbSet<ObyekSubyekTora> ObyekSubyekTora { get; set; }
-        public DbSet<PengajuanTora> PengajuanTora { get; set; }
-        public DbSet<PeriksaDokumenUsulanPenetapan> PeriksaDokumenUsulanPenetapan { get; set; }
-        public DbSet<ProfilDesa> ProfilDesa { get; set; }
-        public DbSet<TipologiPermasalahanAgraria> TipologiPermasalahanTora { get; set; }
+        public DbSet<VillageMapAttribute> VillageMapAttribute { get; set; }
+        public DbSet<ToraMapAttribute> ToraMapAttribute { get; set; }
+        public DbSet<WorkCalendar> WorkCalendar { get; set; }
+        public DbSet<PoliciesDocuments> PoliciesDocuments { get; set; }
+        public DbSet<MeetingReport> MeetingReport { get; set; }
+        public DbSet<ObjectSubjectTora> ObjectSubjectTora { get; set; }
+        public DbSet<ToraSubmission> ToraSubmission { get; set; }
+        public DbSet<ProposalOfActDocumentCheckList> ProposalOfActDocumentCheckList { get; set; }
+        public DbSet<ProfileOfVillage> ProfileOfVillage { get; set; }
+        public DbSet<TipologyOfAgrarianProblem> TipologyOfAgrarianProblem { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Region>().ToTable("Region");
-            modelBuilder.Entity<Region>().ToTable("AtributPetaDesa");
-            modelBuilder.Entity<Region>().ToTable("AtributPetaTora");
-            modelBuilder.Entity<Region>().ToTable("KalenderKerja");
-            modelBuilder.Entity<Region>().ToTable("KebijakanPustaka");
-            modelBuilder.Entity<Region>().ToTable("LaporanPertemuan");
-            modelBuilder.Entity<Region>().ToTable("ObyekSubyekTora");
-            modelBuilder.Entity<Region>().ToTable("PengajuanTora");
-            modelBuilder.Entity<Region>().ToTable("PeriksaDokumenUsulanPenetapan");
-            modelBuilder.Entity<Region>().ToTable("ProfilDesa");
-            modelBuilder.Entity<Region>().ToTable("TipologiPermasalahanTora");
+            modelBuilder.Entity<Region>().ToTable("VillageMapAttribute");
+            modelBuilder.Entity<Region>().ToTable("ToraMapAttribute");
+            modelBuilder.Entity<Region>().ToTable("WorkCalendar");
+            modelBuilder.Entity<Region>().ToTable("PoliciesDocuments");
+            modelBuilder.Entity<Region>().ToTable("MeetingReport");
+            modelBuilder.Entity<Region>().ToTable("ObjectSubjectTora");
+            modelBuilder.Entity<Region>().ToTable("ToraSubmission");
+            modelBuilder.Entity<Region>().ToTable("ProposalOfActDocumentCheckList");
+            modelBuilder.Entity<Region>().ToTable("ProfileOfVillage");
+            modelBuilder.Entity<Region>().ToTable("TipologyOfAgrarianProblem");
 
         }
     }

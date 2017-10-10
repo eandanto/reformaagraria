@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class LaporanPertemuan
+    public class MeetingReport
     {
-        public LaporanPertemuan()
+        public MeetingReport()
         {
 
         }
@@ -18,21 +18,21 @@ namespace reformaagraria.Models
         [Key]
         public string Id { get; set; }
         
-        public string NamaKegiatan { get; set; }
+        public string NameOfActivity { get; set; }
         
-        public DateTime Tanggal { get; set; }
+        public DateTime Date { get; set; }
         
-        public string Tempat { get; set; }
+        public string Place { get; set; }
         
-        public RegionType TingkatPertemuan { get; set; }
+        public RegionType LevelOfMeeting { get; set; }
         
-        public string AgendaPembahasan { get; set; }
+        public string AgendaOfDiscussion { get; set; }
         
-        public string UraianHasil { get; set; }
+        public string DescriptionOfResult { get; set; }
         
-        public string DaftarPeserta { get; set; }
+        public string ListOfParticipants { get; set; }
         
-        public string Lampiran { get; set; }
+        public string Attachment { get; set; }
         
         public DateTime DateCreated { get; set; }
 

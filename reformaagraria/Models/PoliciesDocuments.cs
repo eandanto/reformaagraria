@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class KebijakanPustaka
+    public class PoliciesDocuments
     {
-        public KebijakanPustaka()
+        public PoliciesDocuments()
         {
 
         }
@@ -18,9 +18,9 @@ namespace reformaagraria.Models
         [Key]
         public string Id { get; set; }
         
-        public string JudulDokumen { get; set; }
+        public string TitleOfDocument { get; set; }
                 
-        public string Lampiran { get; set; }
+        public string Attachment { get; set; }
         
         public DateTime DateCreated { get; set; }
 

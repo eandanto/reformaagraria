@@ -7,27 +7,29 @@ using System.Threading.Tasks;
 
 namespace reformaagraria.Models
 {
-    public class AtributPetaDesa
+    public class ToraMapAttribute
     {
-        public AtributPetaDesa()
+        public ToraMapAttribute()
         {
 
         }
 
         [Required]
         [Key]
+        public int Id { get; set; }
+
         [ForeignKey("Region")]
         public int RegionId { get; set; }
 
-        public string Koordinat { get; set; }
+        public string Coordinate { get; set; }
 
-        public double Luas { get; set; }
+        public double Size { get; set; }
 
-        public TahapProsesPenetapanTataBatas TahapProsesPenetapanTataBatas { get; set; }
+        public StageOfToraSettingProcess StageOfToraSettingProcess { get; set; }
 
-        public Status StatusTataBatas { get; set; }
+        public Status BorderSettingStatus { get; set; }
 
-        public string Lampiran { get; set; }
+        public string Attachment { get; set; }
         
         public Region Region { get; set; }
 
