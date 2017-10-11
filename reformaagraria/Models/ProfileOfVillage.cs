@@ -16,8 +16,11 @@ namespace reformaagraria.Models
 
         [Required]
         [Key]
-        [ForeignKey("Region")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+        [ForeignKey("Region")]
+        public int fkRegionId { get; set; }
 
         public string History { get; set; }
                 
@@ -29,6 +32,6 @@ namespace reformaagraria.Models
 
         public DateTime DateModified { get; set; }
 
-        public Region Region { get; set; }
+        public virtual Region Region { get; set; }
     }
 }

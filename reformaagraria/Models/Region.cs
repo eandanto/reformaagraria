@@ -16,7 +16,7 @@ namespace reformaagraria.Models
         
         [Required]
         [Key]
-        public string RegionId { get; set; }
+        public int RegionId { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -25,11 +25,12 @@ namespace reformaagraria.Models
         public RegionType Type { get; set; }
         
         [ForeignKey("Parent")]
-        public string fkParentId { get; set; }
-        public virtual Region Parent { get; set; }
+        public int? fkParentId { get; set; }
 
         public DateTime DateCreated { get; set; }
 
         public DateTime DateModified { get; set; }
+
+        public virtual Region Parent { get; set; }
     }
 }

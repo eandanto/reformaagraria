@@ -20,13 +20,13 @@ namespace reformaagraria.Data
 
             var region = new Region[]
             {
-            new Region{RegionId="1",Name="Sigi",Type=RegionType.REGENCY,fkParentId=null,DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="2",Name="Dolo",Type=RegionType.DISTRICT,fkParentId="1",DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="3",Name="Gumbasa",Type=RegionType.DISTRICT,fkParentId="1",DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="4",Name="Maku",Type=RegionType.VILLAGE,fkParentId="2",DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="5",Name="Tulo",Type=RegionType.VILLAGE,fkParentId="2",DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="6",Name="Tuwa",Type=RegionType.VILLAGE,fkParentId="3",DateCreated=DateTime.Now,DateModified=DateTime.Now},
-            new Region{RegionId="7",Name="Pakuli",Type=RegionType.VILLAGE,fkParentId="3",DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Sigi",Type=RegionType.REGENCY,fkParentId=null,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Dolo",Type=RegionType.DISTRICT,fkParentId=1,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Gumbasa",Type=RegionType.DISTRICT,fkParentId=1,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Maku",Type=RegionType.VILLAGE,fkParentId=2,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Tulo",Type=RegionType.VILLAGE,fkParentId=2,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Tuwa",Type=RegionType.VILLAGE,fkParentId=3,DateCreated=DateTime.Now,DateModified=DateTime.Now},
+            new Region{Name="Pakuli",Type=RegionType.VILLAGE,fkParentId=3,DateCreated=DateTime.Now,DateModified=DateTime.Now},
             };
             foreach (Region rg in region)
             {

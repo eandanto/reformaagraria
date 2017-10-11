@@ -16,6 +16,7 @@ namespace reformaagraria.Models
         
         [Required]
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         
         public string TitleOfDocument { get; set; }

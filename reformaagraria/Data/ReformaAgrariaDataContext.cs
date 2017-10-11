@@ -29,16 +29,16 @@ namespace reformaagraria.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Region>().ToTable("Region");
-            modelBuilder.Entity<Region>().ToTable("VillageMapAttribute");
-            modelBuilder.Entity<Region>().ToTable("ToraMapAttribute");
-            modelBuilder.Entity<Region>().ToTable("WorkCalendar");
-            modelBuilder.Entity<Region>().ToTable("PoliciesDocuments");
-            modelBuilder.Entity<Region>().ToTable("MeetingReport");
-            modelBuilder.Entity<Region>().ToTable("ObjectSubjectTora");
-            modelBuilder.Entity<Region>().ToTable("ToraSubmission");
-            modelBuilder.Entity<Region>().ToTable("ProposalOfActDocumentCheckList");
-            modelBuilder.Entity<Region>().ToTable("ProfileOfVillage");
-            modelBuilder.Entity<Region>().ToTable("TipologyOfAgrarianProblem");
+            modelBuilder.Entity<VillageMapAttribute>().ToTable("VillageMapAttribute");
+            modelBuilder.Entity<ToraMapAttribute>().ToTable("ToraMapAttribute");
+            modelBuilder.Entity<WorkCalendar>().ToTable("WorkCalendar");
+            modelBuilder.Entity<PoliciesDocuments>().ToTable("PoliciesDocuments");
+            modelBuilder.Entity<MeetingReport>().ToTable("MeetingReport");
+            modelBuilder.Entity<ObjectSubjectTora>().ToTable("ObjectSubjectTora");
+            modelBuilder.Entity<ToraSubmission>().ToTable("ToraSubmission");
+            modelBuilder.Entity<ProposalOfActDocumentCheckList>().ToTable("ProposalOfActDocumentCheckList");
+            modelBuilder.Entity<ProfileOfVillage>().ToTable("ProfileOfVillage");
+            modelBuilder.Entity<TipologyOfAgrarianProblem>().ToTable("TipologyOfAgrarianProblem");
 
         }
     }
